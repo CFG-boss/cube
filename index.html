@@ -2,12 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by Baghi</title>
+  <title>Cube - cfg</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
 <use href="#cube" x="128" y="320" stroke-width="2"  opacity="0.3">
 	<animate attributeName="stroke" dur="6s" repeatCount="indefinite"
@@ -21,7 +20,7 @@
 </use>
 
 <defs>
-	<!-- EVERYTHING TOGETHER --> 
+	
  	<g id="cube">
 		<use href="#cube_outline" stroke-linejoin="round" stroke-width="16" fill="url(#stars)"/>
 		<use href="#cube_base" stroke-width=".5"/>
@@ -52,7 +51,7 @@
 					M40 20 L216 20 L216 108 L40 108Z;
 					M128 0 L246 64 L128 128 L10 64Z"/>
 		</path>
-		<path> <!-- LEFT SIDE -->
+		<path> <!-- LEFT -->
 		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
 			keyTimes="0;0.5;0.5;1"
 			keySplines="0.8 0.2 0.6 0.9; 
@@ -65,7 +64,7 @@
 		<animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;0.5;1"
 			values="#fff0;#fff0;#fff2;#fff2"/>
 		</path>
-		<path fill="#407080"> <!-- LEFT SIDE -->
+		<path fill="#407080"> <!-- LEFT  -->
 		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
 			keyTimes="0;0.5;1"
 			keySplines="0.8 0.2 0.6 0.9; 
@@ -86,7 +85,7 @@
     	<stop offset="1" stop-color="#40354a"/>
     </linearGradient>
   
-	<!-- STARS PATTERN --> 
+	 
 	<pattern id="stars" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
 		<rect width="256" height="256" fill="url(#sky)"/>
 		<use href="#star01" x="24" y="32"  fill="white"/>
@@ -150,7 +149,7 @@
 	</path>
 </defs>
 </svg>
-<!-- partial -->
+
   
 </body>
 </html>
